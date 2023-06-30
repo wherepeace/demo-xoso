@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container {
+    position: relative;
+    height: 100vh;
+    width:100vw;
+    background-color: brown;
+}
+.header-container {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+}
+.choses-return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: aliceblue;
+
+}
+.choses-return-items {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80%;
+    width: 400px;
+    background-color: blueviolet;
+}
+.name-turn {
+    width: 150px;
+}
+.name-turn,.number-turn, .open-number {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+.number-turn, .open-number {
+    width: 100px;
+}
+.container-result{
+    display: flex;
+    position: fixed;
+    top: 160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+}
+.result-number{
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(19, 98, 151);
+}
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:160px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: fadIn linear 0.1s;
+}
+.modal-overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 50%;
+    --growth-from : 0.2 ;
+    --growthfrom-to : 1;
+    animation: growth linear 0.4s;
+}
+.modal-return {
+    font-size: 60px;
+    font-weight: 500;
+    color: rgb(19, 98, 151);
+    --growth-from : 0.2 ;
+    --growthfrom-to : 1;
+    animation: growth linear 0.4s;
+}
+
+/* Keyframe */
+ @keyframes fadIn {
+    from {
+        opacity: 0 ;
+    }
+    to{
+        opacity: 1;
+    }
+ }
+ @keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to{
+        transform: scale(var(--growthfrom-to));
+    }
+ }
