@@ -6,7 +6,7 @@ const  innerNumber = document.getElementById('result-number');
 const  openNumber = document.getElementById('open-number');
 const  modalReturn = document.getElementById('modal-return');
 const  nameTurn = document.getElementById('name-turn');
-console.log(nameTurn)
+const autoPlay =  document.getElementById('auto-play') ;
 
 
 function randomNumber (){
@@ -19,6 +19,7 @@ function returnRamdom () {
 };
 // Onclick Random Number and Return 
      turnNumber.onclick = function() {
+     play()
      clearInter = setInterval(randomNumber,100);
      turnNumber.setAttribute('disabled', true);
      openNumber.removeAttribute("disabled");
@@ -27,6 +28,7 @@ function returnRamdom () {
 
 // Created element in DOM 
    openNumber.onclick = function() {
+      pause();
       returnRamdom ();
       clearInterval (clearInter)
       const modal = document.createElement('div');
@@ -50,3 +52,10 @@ function returnRamdom () {
             containerBody.removeChild(modal);
             innerNumber.innerHTML= 'START' ;
          } ;
+  // Autoplay mp3 play and pause
+  function play() {
+     autoPlay.play();
+   }
+   function pause() {
+     autoPlay.pause()
+   }

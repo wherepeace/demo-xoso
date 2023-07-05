@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Dự Đoán Xổ Sổ</title>
+    <title>Dự Đoán Xổ Số</title>
 </head>
 <body>
     <div id="container">
-        <div class="header-container"></div>
+        <div class="header-container" ></div>
         <div class="choses-return">
             <div class="choses-return-items">
                 <select id="name-turn" class="name-turn">
-                    <option value="2"> Anh Nhất</option>
-                    <option value="3"> Văn Hưng</option>
+                    <option value="1"> Miền Nam </option>
+                    <option value="2"> Miền Trung </option>
+                    <option value="3"> Miền Bắc </option>
                 </select>
                 <button id="number-turn" class="number-turn" > Quay Số </button>
                 <button id="open-number" class="open-number" disabled > Mở Số Dự Đoán </button>
@@ -25,8 +26,10 @@
                 <div id="result-number" class="result-number">START</div>
             </div>
         </div>
-    
     </div>
+    <audio  id="auto-play" >
+        <source src="xoso.mp3" type="audio/mpeg">
+    </audio>
     <script src="./main.js"></script>
 </body>
 </html>
