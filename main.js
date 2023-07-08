@@ -28,7 +28,7 @@ function returnRamdom () {
 
 // Created element in DOM 
    openNumber.onclick = function() {
-      pause();
+      pause()
       returnRamdom ();
       clearInterval (clearInter)
       const modal = document.createElement('div');
