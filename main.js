@@ -50,7 +50,7 @@ function returnRamdom () {
   nameTurn.onchange = function () {
             turnNumber.removeAttribute("disabled");
             containerBody.removeChild(modal);
-            innerNumber.innerHTML= 'START' ;
+            innerNumber.innerHTML= '00' ;
          } ;
   // Autoplay mp3 play and pause
   function play() {
