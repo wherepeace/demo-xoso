@@ -12,7 +12,6 @@ const autoPlay =  document.getElementById('auto-play') ;
 function randomNumber (){
      number = Math.floor(Math.random()*100);
      innerNumber.innerHTML= number ;
-     console.log(number)
 };
 function returnRamdom () {
      godless = Math.floor(Math.random()*100);
@@ -59,3 +58,4 @@ function returnRamdom () {
    function pause() {
      autoPlay.pause()
    }
+//////////////////////////////////////////////////////////////// 
